@@ -3,3 +3,14 @@
 
 # Members
 @originap @mountaindew93 @zxczxczczz @DaveLEE777
+
+# Download Guide
+제가 사용한 명령어 적습니다.
+cd front_end
+npm create vite@latest . (vue 선택 후 javascript 선택)
+npm install
+이렇게 기본 셋팅 했습니다. 
+npm run dev 로 실행할 수 있습니다.
+
+일단 제 컴에서는 되는데, 풀 받았을 때 안될 수 있습니다.
+->gpt 쓰십시오.
