@@ -5,6 +5,15 @@
 @originap @mountaindew93 @zxczxczczz @DaveLEE777
 
 # Download Guide
+pull 받기
+node -v 와 npm -v 로 필요한거 있는지 확인
+노드 없으면 node.js 다운받기
+front_end 폴더로 cd, 이동 해서 npm install 실행
+끝
+
+
+
+
 제가 사용한 명령어 적습니다.
 cd front_end
 npm create vite@latest . (vue 선택 후 javascript 선택)
