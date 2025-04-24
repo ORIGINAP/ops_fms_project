@@ -4,6 +4,7 @@
         <input v-model="password" type="password" placeholder="비밀번호" class="input" />
     </div>
 </template>
+<button @click="login" class="btn">로그인</button>
   
 <script>
 export default {
@@ -12,6 +13,11 @@ export default {
       username: '',
       password: '',
     };
+  },
+  methods: {
+    login() {
+      // 로그인 추후 추가
+    },
   },
 };
 </script>
