@@ -1,19 +1,21 @@
 <template>
     <div class="login">
-      <!-- 로그인 폼 -->
+        <input v-model="username" placeholder="아이디" class="input" />
+        <input v-model="password" type="password" placeholder="비밀번호" class="input" />
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
-    name: 'Login',
-    data() {
-      return {};
-    },
-    methods: {},
-  };
-  </script>
+<script>
+export default {
+  data() {
+    return {
+      username: '',
+      password: '',
+    };
+  },
+};
+</script>
   
-  <style scoped>
+<style scoped>
   /* 추후 스타일 추가 */
-  </style>
+</style>
