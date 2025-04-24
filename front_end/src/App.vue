@@ -9,9 +9,20 @@
     <!-- 사이드 메뉴 -->
     <div :class="['side-menu', { 'open': isMenuOpen }]">
       <!-- 사이드 메뉴 내용 -->
-      <div class="close-btn" @click="toggleMenu">✕</div>
+
       <div class="menu-content">
-        <ul>
+        <div class="menu-header">
+          <div class="close-btn" @click="toggleMenu">✕</div>
+          <div class="info-box" @click="showModal = true">
+            <h3>정보 칸</h3>
+          </div>
+          <div class="info-box" @click="showModal = true">
+            <h3>정보 칸</h3>
+          </div>
+        </div>
+        
+        
+        <ul class="menu-list">
           <li>메뉴 항목 1</li>
           <li>메뉴 항목 2</li>
           <li>메뉴 항목 3</li>
@@ -80,8 +91,8 @@ html, body {
 }
 
 .close-btn {
-  position: absolute;
-  top: 7px;
+  
+  margin-top: -13px;
   right: 15px;
   font-size: 37px;
   cursor: pointer;
@@ -106,6 +117,13 @@ html, body {
   right: 0;
 }
 
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
 .menu-content {
   padding: 20px;
 }
@@ -118,6 +136,20 @@ html, body {
 .menu-content li {
   padding: 10px 0;
 }
+
+/* 메뉴 칸의 정보 박스 */
+.info-box {
+  padding: 50px 21px;
+  width: 300px;
+  color: white;
+  background-color: #5a5a5a;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+
 
 /* 메인 콘텐츠 스타일 */
 .main-content {
