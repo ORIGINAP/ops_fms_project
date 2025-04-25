@@ -1,8 +1,8 @@
 <template>
-    <div class="login">
-        <input v-model="username" placeholder="아이디" class="input" />
-        <input v-model="password" type="password" placeholder="비밀번호" class="input" />
-    </div>
+  <div class="login">
+    <input v-model="username" placeholder="아이디" class="input" />
+    <input v-model="password" type="password" placeholder="비밀번호" class="input" />
+  </div>
 </template>
 <button @click="login" class="btn">로그인</button>
   
@@ -31,5 +31,22 @@ export default {
 </script>
   
 <style scoped>
-  /* 추후 스타일 추가 */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #254081;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #1f3268;
+}
 </style>
