@@ -16,7 +16,15 @@ export default {
   },
   methods: {
     login() {
-      // 로그인 추후 추가
+      if (!this.username || !this.password) {
+      alert('아이디와 비밀번호를 입력하세요.');
+      return;
+    }
+    if (this.username === 'admin' && this.password === '1234') {
+      this.$router.push('/main');
+    } else {
+      alert('로그인 실패');
+    }
     },
   },
 };
