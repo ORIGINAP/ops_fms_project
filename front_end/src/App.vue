@@ -32,7 +32,7 @@
 
     <!-- 메인 콘텐츠 -->
     <div class="main-content">
-      <h1>메인 콘텐츠 영역</h1>
+      <router-view />
     </div>
   </div>
 </template>
