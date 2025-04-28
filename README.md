@@ -3,3 +3,28 @@
 
 # Members
 @originap @mountaindew93 @zxczxczczz @DaveLEE777
+
+# Download Guide
+pull 받기
+node -v 와 npm -v 로 필요한거 있는지 확인
+노드 없으면 node.js 다운받기
+front_end 폴더로 cd, 이동 해서 npm install 실행
+끝
+
+
+
+
+제가 사용한 명령어 적습니다.
+cd front_end
+npm create vite@latest . (vue 선택 후 javascript 선택)
+npm install
+이렇게 기본 셋팅 했습니다. 
+npm run dev 로 실행할 수 있습니다.
+
+이후 npm install vue-router 로 라우터 설정 했습니다.
+
+vscode 사용하시면 vue 확장 쓰시면 자동완성 됩니다.
+
+일단 제 컴에서는 되는데, 풀 받았을 때 안될 수 있습니다.
+->gpt 쓰십시오.
+
